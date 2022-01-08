@@ -1,0 +1,30 @@
+
+[2022-01-08 19:14:41,097] INFO - DevTest - file: main - fun: main() - LN: 166 
+---main--funn--START---
+
+[2022-01-08 19:14:41,097] INFO - DevTest - file: main - fun: create_db_conn() - LN: 17 
+---database: employees_db
+
+[2022-01-08 19:14:41,101] DEBUG - DevTest - file: main - fun: create_db_conn() - LN: 21 
+---db-is-exist: True
+
+[2022-01-08 19:14:41,101] INFO - DevTest - file: main - fun: create_db_conn() - LN: 28 
+---db_conn: Database(MongoClient(host=['localhost:27017'], document_class=dict, tz_aware=False, connect=True), 'employees_db')
+
+[2022-01-08 19:14:41,101] INFO - DevTest - file: main - fun: create_db_collection() - LN: 42 
+---collection_name: personal_details
+
+[2022-01-08 19:14:41,101] DEBUG - DevTest - file: main - fun: create_db_collection() - LN: 45 
+---collection-is-exist: True
+
+[2022-01-08 19:14:41,101] INFO - DevTest - file: main - fun: create_db_collection() - LN: 52 
+---db_collection: Collection(Database(MongoClient(host=['localhost:27017'], document_class=dict, tz_aware=False, connect=True), 'employees_db'), 'personal_details')
+
+[2022-01-08 19:14:41,101] INFO - DevTest - file: main - fun: create_records() - LN: 67 
+---paramset: {'first_name': 'Ashish', 'last_name': 'Soni', 'gender': 'male', 'age': 23, 'is_active': True}
+
+[2022-01-08 19:14:41,102] INFO - DevTest - file: main - fun: create_records() - LN: 78 
+---last_insert_ids: 61d9954954fc889595051252
+
+[2022-01-08 19:14:41,102] DEBUG - DevTest - file: main - fun: main() - LN: 179 
+---create_result: 61d9954954fc889595051252
