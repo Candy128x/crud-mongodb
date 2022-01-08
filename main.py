@@ -117,7 +117,7 @@ def update_records(db_colln, qry_type, where_dict: dict = {}, update_dict: dict 
     """
     is_updated = False
     try:
-        # logger.info(f'---read_records--START---')
+        # logger.info(f'---update_records--START---')
         logger.info(f'---qry_type: {qry_type} ---where_dict: {where_dict} ---update_dict: {update_dict}')
         if qry_type == 'update_one':
             is_updated = True
@@ -144,7 +144,7 @@ def delete_records(db_colln, qry_type, delete_dict: dict = {}):
     """
     is_deleted = False
     try:
-        # logger.info(f'---read_records--START---')
+        # logger.info(f'---delete_records--START---')
         logger.info(f'---qry_type: {qry_type} ---delete_dict: {delete_dict}')
         if qry_type == 'delete_one':
             result = db_colln.delete_one(delete_dict)
